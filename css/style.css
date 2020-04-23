@@ -47,10 +47,6 @@ a {
     margin: -1px;
     border: 0;
     padding: 0;
-    /*????????????????????/*/
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -58,7 +54,6 @@ a {
 /*-----------------------ШАПКА-----------------------*/
 
 .page-header {
-    /*  background-color: rgba(8, 235, 57, 0.5);*/
     width: 1170px;
     margin: 0 auto;
     margin-top: 60px;
@@ -100,7 +95,6 @@ a {
     list-style: none;
     line-height: 18px;
     letter-spacing: 2px;
-    /*  background-color: rgba(235, 99, 8, 0.5);*/
 }
 
 .site-navigation .menu-item:last-child {
@@ -127,7 +121,7 @@ a {
     flex-direction: column;
     position: relative;
     width: 1440px;
-    height: auto;
+    height: 464px;
     margin-bottom: 44px;
     background: url("../img/post-image.jpg");
     background-position: center center;
@@ -143,6 +137,7 @@ a {
 }
 
 .post-title {
+    position: relative;
     margin: 0;
     margin-bottom: 48px;
     font-family: "Roboto", sans-serif;
@@ -173,8 +168,8 @@ a {
     content: "";
     width: 55px;
     height: 55px;
-    top: 55px;
-    right: 50%;
+    top: -100px;
+    right: 47%;
     border-radius: 50%;
     background: url("../img/post-logo.svg");
     background-repeat: no-repeat;
