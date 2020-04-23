@@ -151,9 +151,9 @@ a {
 }
 
 .post-content {
-    align-self: center;
     max-width: 456px;
     margin: 0 auto;
+    padding-top: 90px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -316,12 +316,12 @@ figure.review-item {
     line-height: 31px;
 }
 
-.ticket-info .ticket-title a {
+.ticket-info a {
     text-decoration: none;
     color: #000000;
 }
 
-.ticket-info .ticket-title a:hover {
+.ticket-info a:hover {
     color: rgba(255, 121, 49, 1);
 }
 
@@ -363,8 +363,11 @@ figure.review-item {
     line-height: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
     background-color: rgba(255, 121, 49, 1);
+}
+
+.ticket-info a.btn-see {
+    color: #ffffff;
 }
 
 .btn-see:hover {
