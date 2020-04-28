@@ -243,8 +243,8 @@ a {
 }
 
 .review-item a:hover {
+    filter: brightness(60%);
     color: rgb(255, 121, 49);
-    opacity: 0.8;
 }
 
 .review-item a:active {
