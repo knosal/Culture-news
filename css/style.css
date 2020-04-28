@@ -218,6 +218,7 @@ a {
 
 .review-item a {
     color: #000000;
+    transition: 0.5s ease-out;
 }
 
 .review-item a:hover {
@@ -227,7 +228,7 @@ a {
 
 .review-item a:active {
     color: rgba(255, 121, 49, 0.7);
-    opacity: 0.5;
+    background-color: rgba(255, 121, 49, 1);
 }
 
 .review-item .annotation-caption {
@@ -238,19 +239,6 @@ a {
     font-size: 23px;
     line-height: 31px;
     margin: 0;
-}
-
-.review-item .annotation-caption a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-}
-
-.review-item .annotation-caption a:hover {
-    color: rgb(255, 121, 49);
-}
-
-.review-item .annotation-caption a:active {
-    color: rgba(255, 121, 49, 0.7);
 }
 
 .review-item .review-annotation {
@@ -364,7 +352,6 @@ a {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 121, 49, 1);
-    transition: 0.5s ease;
 }
 
 .btn-see:hover {
