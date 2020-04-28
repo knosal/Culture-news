@@ -130,6 +130,27 @@ a {
     color: #ffffff;
 }
 
+.main-post::after {
+    content: "НОВОЕ";
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 135px;
+    width: 118px;
+    height: 25px;
+    opacity: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #FF7931;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.main-post:hover::after {
+    opacity: 1;
+}
+
 .post-container {
     margin: 0 auto;
     padding-top: 138px;
@@ -447,7 +468,7 @@ ul.footer-menu .menu-item:last-child {
 }
 
 .social-btn:active {
-    background-color: rgba(255, 121, 49, 0.5);
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 .instagram-icon {
