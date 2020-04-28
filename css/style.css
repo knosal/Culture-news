@@ -81,11 +81,17 @@ a {
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 
 .site-navigation .menu-item {
+    flex-grow: 1;
+    padding: 0 25px;
+    padding-bottom: 10px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -94,6 +100,10 @@ a {
     list-style: none;
     line-height: 18px;
     letter-spacing: 2px;
+}
+
+.site-navigation .menu-item:first-child {
+    padding-left: 0;
 }
 
 .site-navigation .menu-item:last-child {
@@ -431,6 +441,10 @@ a {
 
 ul.footer-menu .menu-item:last-child {
     padding-right: 0;
+}
+
+ul.footer-menu .menu-item:first-child {
+    padding-left: 0;
 }
 
 .page-footer .menu-item a {
