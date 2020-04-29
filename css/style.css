@@ -14,7 +14,10 @@
 
 html,
 body {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     min-width: 1170px;
     margin: 0 auto;
@@ -61,8 +64,12 @@ a {
 }
 
 .header-navigation {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: center;
     justify-content: center;
 }
 
@@ -80,8 +87,10 @@ a {
 }
 
 .site-navigation {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
@@ -89,6 +98,7 @@ a {
 }
 
 .site-navigation .menu-item {
+    -webkit-box-flex: 1;
     flex-grow: 1;
     padding: 0 25px;
     padding-bottom: 10px;
@@ -126,12 +136,16 @@ a {
 /*-----------------------РЕКЛАМА-----------------------*/
 
 .main-post {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     position: relative;
     width: 1440px;
     height: 464px;
     margin-bottom: 44px;
+    margin: 0 auto;
     background: url("../img/post-image.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -153,6 +167,7 @@ a {
     line-height: 25px;
     text-align: center;
     background-color: #FF7931;
+    -webkit-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -232,9 +247,12 @@ a {
 }
 
 .review .review-items {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
+    -webkit-box-flex: 1;
     flex-grow: 1;
     margin: 0;
     padding: 0;
@@ -248,10 +266,12 @@ a {
 
 .review-item a {
     color: #000000;
+    -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
 }
 
 .review-item a:hover {
+    -webkit-filter: brightness(60%);
     filter: brightness(60%);
     color: rgb(255, 121, 49);
 }
@@ -297,8 +317,12 @@ a {
 }
 
 .season-ticket .ticket {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     max-width: 400px;
     width: 700px;
@@ -381,6 +405,7 @@ a {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 121, 49, 1);
+    -webkit-transition: color 0.8s ease-out;
     transition: color 0.8s ease-out;
 }
 
